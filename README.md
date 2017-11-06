@@ -11,7 +11,7 @@ The following steps were used detect lane lines in the image:
 - Overlay lines on original image.
 
 ### Convert to Grayscale
-Converting the image from RGB (left) to Grayscale (right) reduces the image size by a third and unifies white and yellow lane lines. With all colour gradients removed, the image is now primed from edge detection using the gradient in grayscale shades.
+Converting the image from RGB (left) to Grayscale (right) reduces the image size by a third and unifies white and yellow lane lines. With all colour gradients removed, the image is now primed for edge detection using the gradient in grayscale shades.
 
 | ![alt text][image1] | ![alt text][image2] |
 |:---:|:---:|
@@ -31,9 +31,8 @@ The image returned from the edge detection function (left) contains artifacts fr
 
 
 ### Hough Lines
-Applying the Hough Lines function to the masked image (left) returns a set of lines defined by two sets of points ((x1,y1),(x2,y2)). This set is passed to the function draw_lines() that categorizes each line as left, right, or noise based on the slope. 
+Applying the Hough Lines function to the masked image (left) returns a set of lines defined by two sets of points ((x1,y1),(x2,y2)). This set is passed to the function draw_lines() that categorizes each line as left, right, or noise based on the slope. If the line is a left or a right lane line then its slope and y-intercept are computed using **y = m\*x + y** with each set of points and appended to a list specific to each lane. Once all the lines have been examined, a single left and right lane line is drawn using the mean slope and y-intercept (right).
 
-y = m*x + b 
 
 | ![alt text][image4] | ![alt text][image5] |
 |:---:|:---:|
