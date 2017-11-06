@@ -19,9 +19,7 @@
 
 
 
-| ![alt text][image1] | ![alt text][image1] | ![alt text][image1] |
-|:---:|:---:|:---:|
-| http://videoblocks.com | http://audioblocks.com | http://graphicstock.com |
+| ![alt text][image1] | ![alt text][image2] |
 
 
 ![alt text][image1]
