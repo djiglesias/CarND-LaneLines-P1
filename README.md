@@ -4,11 +4,11 @@
 ## 1. Pipeline Overview
 
 The following steps were used detect lane lines in the image:
-- Convert to grayscale.
-- Use Canny for edge detection.
-- Apply region of interest.
-- Apply Hough Lines.
-- Overlay lines on original image.
+- Grayscale
+- Edge Detection
+- Region of Interest
+- Hough Lines
+- Image Overlay
 
 ### Convert to Grayscale
 Converting the image from RGB (left) to Grayscale (right) reduces the image size by a third and unifies white and yellow lane lines. With all colour gradients removed, the image is now primed for edge detection using the gradient in grayscale shades.
