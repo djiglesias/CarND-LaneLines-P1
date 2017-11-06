@@ -3,32 +3,38 @@
 
 ## 1. Pipeline Overview
 
-- describe the pipeline
--- convert to gray scale
--- run canny on image
--- apply region of interest
--- draw hough lines
--- overlay the lines onto the original image with transparency
-- describe draw_lines()
--- determine slope and y-intercept for each set of points
--- select all lines with slope between 0.4 & inf
--- draw line with average values from left and right
-- describe process_image()
--- run process image, and catch instances where no lines are found
+The following steps were used detect lane lines in the image:
+- Convert to grayscale.
+- Use Canny for edge detection.
+- Apply region of interest.
+- Apply Hough Lines.
+- Overlay lines on original image.
 
-
-
+### Convert to Grayscale
 
 | ![alt text][image1] | ![alt text][image2] |
 |:---:|:---:|
 
 
-![alt text][image1]
-![alt text][image2]
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-![alt text][image6]
+### Edge Detection
+| ![alt text][image2] | ![alt text][image3] |
+|:---:|:---:|
+
+
+### Region of Interest
+| ![alt text][image3] | ![alt text][image4] |
+|:---:|:---:|
+
+
+### Hough Lines
+| ![alt text][image4] | ![alt text][image5] |
+|:---:|:---:|
+
+
+### Draw Lines
+| ![alt text][image5] | ![alt text][image6] |
+|:---:|:---:|
+
 
 
 ## 2. Shortcomings of Current Pipeline
