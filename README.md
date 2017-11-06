@@ -24,12 +24,17 @@ The grayscale image (left) is processed for edges (right) by using OpenCV to dra
 
 
 ### Region of Interest
-Since there ...
+The image returned from the edge detection function (left) contains artifacts from undesired portions of the image (horizon, shoulder, street signs... etc) and there should be removed to increase the quality of the lane detection function. These are removed by applying a mask over the image that eliminates all features outside of a polygon (defined by four vertices) that defines the region most probable of containing lane lines. The result is the same image with (hopefully) only edges from lane lines (right).
+
 | ![alt text][image3] | ![alt text][image4] |
 |:---:|:---:|
 
 
 ### Hough Lines
+Applying the Hough Lines function to the masked image (left) returns a set of lines defined by two sets of points ((x1,y1),(x2,y2)). This set is passed to the function draw_lines() that categorizes each line as left, right, or noise based on the slope. 
+
+y = m*x + b 
+
 | ![alt text][image4] | ![alt text][image5] |
 |:---:|:---:|
 
