@@ -11,17 +11,18 @@ The following steps were used detect lane lines in the image:
 - Overlay lines on original image.
 
 ### Convert to Grayscale
-
+Converting the image from RGB (left) to Grayscale (right) reduces the image size by a third and unifies white and yellow lane lines. With all colour gradients removed, the image is now primed from edge detection using the gradient in grayscale shades.
 | ![alt text][image1] | ![alt text][image2] |
 |:---:|:---:|
 
-
 ### Edge Detection
+The grayscale image (left) is processed for edges (right) by using OpenCV to draw lines along all the regions where there is a distinct threshold in gradient. The threshold is controlled by adjust the upper and lower limits to filter out unwanted spectrums of the gradiate.
 | ![alt text][image2] | ![alt text][image3] |
 |:---:|:---:|
 
 
 ### Region of Interest
+Since there ...
 | ![alt text][image3] | ![alt text][image4] |
 |:---:|:---:|
 
