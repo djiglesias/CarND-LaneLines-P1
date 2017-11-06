@@ -17,14 +17,14 @@ Converting the image from RGB (left) to Grayscale (right) reduces the image size
 |:---:|:---:|
 
 ### Edge Detection
-The grayscale image (left) is processed for edges (right) by using OpenCV to draw lines along all the regions where there is a distinct threshold in gradient. The threshold is controlled by adjust the upper and lower limits to filter out unwanted spectrums of the gradiate.
+The grayscale image (left) is processed for edges (right) by using OpenCV to draw lines along all the regions where there is a distinct threshold in the gradient. The threshold is controlled by adjust the upper and lower limits to filter out unwanted spectrums of the gradient.
 
 | ![alt text][image2] | ![alt text][image3] |
 |:---:|:---:|
 
 
 ### Region of Interest
-The image returned from the edge detection function (left) contains artifacts from undesired portions of the image (horizon, shoulder, street signs... etc) and there should be removed to increase the quality of the lane detection function. These are removed by applying a mask over the image that eliminates all features outside of a polygon (defined by four vertices) that defines the region most probable of containing lane lines. The result is the same image with (hopefully) only edges from lane lines (right).
+The image returned from the edge detection function (left) contains artifacts from undesired portions of the image (horizon, shoulder, street signs... etc) and these should be removed to increase the quality of the lane detection function. These are removed by applying a mask over the image that eliminates all features outside of a polygon (defined by four vertices) that defines the region most probable to contain lane lines. The result is the same image with (hopefully) only edges from lane lines (right).
 
 | ![alt text][image3] | ![alt text][image4] |
 |:---:|:---:|
