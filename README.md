@@ -21,7 +21,6 @@
 
 | ![alt text][image1] | ![alt text][image2] |
 |:---:|:---:|
-| http://videoblocks.com | http://audioblocks.com |
 
 
 ![alt text][image1]
