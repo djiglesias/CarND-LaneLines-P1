@@ -18,7 +18,7 @@
 
 
 
-![alt-text]([image1] "Original") ![alt-text]([image2] "Grayscale")
+![alt-text](./examples/original.jpg "Original") ![alt-text](./examples/original.jpg "Grayscale")
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
