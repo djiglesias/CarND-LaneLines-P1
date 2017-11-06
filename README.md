@@ -31,7 +31,7 @@ The image returned from the edge detection function (left) contains artifacts fr
 
 
 ### Hough Lines
-Applying the Hough Lines function to the masked image (left) returns a set of lines defined by two sets of points ((x1,y1),(x2,y2)). This set is passed to the function draw_lines() that categorizes each line as left, right, or noise based on the slope. If the line is a left or a right lane line then its slope and y-intercept are computed using **y = m\*x + y** with each set of points and appended to a list specific to each lane. Once all the lines have been examined, a single left and right lane line is drawn using the mean slope and y-intercept (right).
+Applying the Hough Lines function to the masked image (left) returns a set of lines defined by two sets of points ((x1,y1),(x2,y2)). This set is passed to the function draw_lines() that categorizes each line as left, right, or noise based on the slope. If the line is a left or a right lane line then its slope and y-intercept are computed using **y = m\*x + b** with each set of points and appended to a list specific to each lane. Once all the lines have been examined, a single left and right lane line is drawn using the mean slope and y-intercept (right).
 
 
 | ![alt text][image4] | ![alt text][image5] |
