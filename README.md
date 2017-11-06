@@ -45,6 +45,10 @@ Using the magnitude() function, the lane lines image returned from the previous 
 |:---:|:---:|
 
 
+![Alt Text](./examples/solidYellowLeft.gif)
+
+
+
 ## 2. Shortcomings of Current Pipeline
 As with all software, there are always short comings and drawbacks to the methodology used. For this project the major drawbacks were due to assumptions made in order for this to remain a beginner level project. The function to detect and overlay lane lines onto an image (or stream of images) was limited to a linear based model. If the lane lines were to bend, as would be observed on a corner, then the function would neglect the polynomial behaviour of such a line and consider only the slope between the start and end of the line segment. This generalization limits the algorithm to straight stretches of road.
 
