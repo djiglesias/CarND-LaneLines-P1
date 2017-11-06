@@ -18,11 +18,11 @@
 
 
 
-![alt text][image1 =250x]
-![alt text][image2 =250x]
-![alt text][image3 =250x]
-![alt text][image4 =250x]
-![alt text][image5 =250x]
+![alt text][image1]
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
 
 
 ## 2. Shortcomings of Current Pipeline
