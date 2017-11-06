@@ -18,11 +18,11 @@
 
 
 
-![alt text][image1]
-![alt text][image2]
+![alt text][image1] ![alt text][image2]
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
+![alt text][image6]
 
 
 ## 2. Shortcomings of Current Pipeline
@@ -46,8 +46,9 @@ Another potential improvement could be to ...
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[image2]: ./examples/canny.jpg     "Canny"
-[image3]: ./examples/roi.jpg       "Region of Interest"
-[image4]: ./examples/houghline.jpg "Houghs Lines"
-[image5]: ./examples/weighted.jpg  "Weighted Image"
+[image1]: ./examples/original.jpg  "Original"
+[image2]: ./examples/grayscale.jpg "Grayscale"
+[image3]: ./examples/canny.jpg     "Canny"
+[image4]: ./examples/roi.jpg       "Region of Interest"
+[image5]: ./examples/houghline.jpg "Houghs Lines"
+[image6]: ./examples/weighted.jpg  "Weighted Image"
