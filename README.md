@@ -39,9 +39,9 @@ Applying the Hough Lines function to the masked image (left) returns a set of li
 
 
 ### Lane Line Overlay
-Using the magnitude() function, the lane lines image returned from the previous step (left) is superimposed onto the original image using a semi-transparent mask to give the final image (right).
+Using the magnitude() function, the lane lines image returned from the previous step is superimposed onto the original image using a semi-transparent mask to give the final image (below).
 
-![Alt Text][logo]
+![Alt Text][gif]
 
 
 ## 2. Shortcomings of Current Pipeline
@@ -54,7 +54,7 @@ The computing efficiency of this algorithm could be dramatically increased in a 
 
 [//]: # (Image References)
 
-[logo]:   ./examples/solidYellowLeft.gif "Lane Lines"
+[gif]:    ./examples/solidYellowLeft.gif "Lane Lines"
 [image1]: ./examples/original.jpg  "Original"
 [image2]: ./examples/grayscale.jpg "Grayscale"
 [image3]: ./examples/canny.jpg     "Canny"
