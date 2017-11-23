@@ -48,7 +48,7 @@ Using the magnitude() function, the lane lines image returned from the previous 
 As with all software, there are always short comings and drawbacks to the methodology used. For this project the major drawbacks were due to assumptions made in order for this to remain a beginner level project. The function to detect and overlay lane lines onto an image (or stream of images) was limited to a linear based model. If the lane lines were to bend, as would be observed on a corner, then the function would neglect the polynomial behaviour of such a line and consider only the slope between the start and end of the line segment. This generalization limits the algorithm to straight stretches of road.
 
 
-## 3.Possible Pipeline Improvements
+## 3. Possible Pipeline Improvements
 The computing efficiency of this algorithm could be dramatically increased in a number of possible ways since there is quite a bit on unnecessary computation performed on this image. Such improvements would be to reduce the image quality as to limit the number of pixels to be processed on each image, and to create a new subimage from the region of interest imediately after applying the greyscale.
 
 
